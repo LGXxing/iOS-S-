@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8150" systemVersion="15A204g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8122"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -13,15 +14,66 @@
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="kkU-fP-f4f">
+                                <rect key="frame" x="0.0" y="0.0" width="580" height="1030"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="PDA-tG-gkg">
+                                        <rect key="frame" x="0.0" y="0.0" width="580" height="1030"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="PDA-tG-gkg" firstAttribute="leading" secondItem="kkU-fP-f4f" secondAttribute="leadingMargin" id="6n0-wf-xJS"/>
+                                    <constraint firstItem="PDA-tG-gkg" firstAttribute="top" secondItem="kkU-fP-f4f" secondAttribute="top" id="IdS-17-Lg8"/>
+                                    <constraint firstItem="PDA-tG-gkg" firstAttribute="centerY" secondItem="kkU-fP-f4f" secondAttribute="centerY" id="KCP-bw-oxe"/>
+                                    <constraint firstItem="PDA-tG-gkg" firstAttribute="leading" secondItem="kkU-fP-f4f" secondAttribute="leading" id="NQr-us-pYh"/>
+                                    <constraint firstItem="PDA-tG-gkg" firstAttribute="top" secondItem="kkU-fP-f4f" secondAttribute="top" id="Z9g-pu-80V"/>
+                                    <constraint firstAttribute="bottom" secondItem="PDA-tG-gkg" secondAttribute="bottom" id="Zv1-yR-xfG"/>
+                                    <constraint firstAttribute="trailing" secondItem="PDA-tG-gkg" secondAttribute="trailing" id="atZ-OW-hFo"/>
+                                    <constraint firstAttribute="bottom" secondItem="PDA-tG-gkg" secondAttribute="bottom" id="bGr-Ef-ooI"/>
+                                    <constraint firstAttribute="bottom" secondItem="PDA-tG-gkg" secondAttribute="bottom" id="dIv-P5-NOM"/>
+                                    <constraint firstAttribute="trailing" secondItem="PDA-tG-gkg" secondAttribute="trailing" id="dez-u4-7XG"/>
+                                    <constraint firstItem="PDA-tG-gkg" firstAttribute="top" secondItem="kkU-fP-f4f" secondAttribute="topMargin" id="eiG-Bl-mKQ"/>
+                                    <constraint firstItem="PDA-tG-gkg" firstAttribute="leading" secondItem="kkU-fP-f4f" secondAttribute="leading" id="er3-xr-8QV"/>
+                                    <constraint firstItem="PDA-tG-gkg" firstAttribute="bottom" secondItem="kkU-fP-f4f" secondAttribute="bottomMargin" id="gPO-ys-24O"/>
+                                    <constraint firstItem="PDA-tG-gkg" firstAttribute="centerX" secondItem="kkU-fP-f4f" secondAttribute="centerX" id="lgN-WJ-NHp"/>
+                                    <constraint firstItem="PDA-tG-gkg" firstAttribute="trailing" secondItem="kkU-fP-f4f" secondAttribute="trailingMargin" id="n53-JN-RXn"/>
+                                    <constraint firstItem="PDA-tG-gkg" firstAttribute="top" secondItem="kkU-fP-f4f" secondAttribute="top" id="ngj-68-25W"/>
+                                    <constraint firstItem="PDA-tG-gkg" firstAttribute="leading" secondItem="kkU-fP-f4f" secondAttribute="leading" id="o2H-6d-tr8"/>
+                                    <constraint firstAttribute="trailing" secondItem="PDA-tG-gkg" secondAttribute="trailing" id="oZI-L4-eOt"/>
+                                    <constraint firstItem="PDA-tG-gkg" firstAttribute="top" secondItem="kkU-fP-f4f" secondAttribute="top" id="y6D-pf-pdS"/>
+                                    <constraint firstItem="PDA-tG-gkg" firstAttribute="leading" secondItem="kkU-fP-f4f" secondAttribute="leading" id="yDV-Ka-3uQ"/>
+                                </constraints>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fi.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="wtD-0j-DC0">
+                                <rect key="frame" x="-83" y="-147" width="580" height="1030"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="580" id="HQW-oo-K8K"/>
+                                    <constraint firstAttribute="height" constant="1030" id="hs5-Hf-64O"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kkU-fP-f4f" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="Bvk-VS-KxP"/>
+                            <constraint firstItem="kkU-fP-f4f" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="DnK-nb-3a7"/>
+                            <constraint firstItem="wtD-0j-DC0" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="RSw-bF-qkx"/>
+                            <constraint firstAttribute="trailing" secondItem="kkU-fP-f4f" secondAttribute="trailing" constant="-166" id="iCK-OM-GnR"/>
+                            <constraint firstAttribute="bottom" secondItem="kkU-fP-f4f" secondAttribute="bottom" constant="-294" id="ja3-RV-SPa"/>
+                            <constraint firstItem="wtD-0j-DC0" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="v6K-pb-YMz"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="172" y="380"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="fi.jpg" width="580" height="1030"/>
+    </resources>
 </document>
